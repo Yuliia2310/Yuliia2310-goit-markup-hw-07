@@ -16,12 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/mobphone.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header-page">
-      <div class="container header-container"> 
+      <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
             ><span class="logo-accent">Web</span>Studio</a
@@ -160,7 +160,7 @@
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="team-cards card-set list">
-            <li class="team-list card-set-item">
+            <li class="team-list">
               <img
                 src="./images/img_mark.jpg"
                 alt="img_mark"
@@ -203,7 +203,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list card-set-item">
+            <li class="team-list">
               <img
                 src="./images/img_tom.jpg"
                 alt="img_tom"
@@ -245,7 +245,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list card-set-item">
+            <li class="team-list">
               <img
                 src="./images/img_camila.jpg"
                 alt="img_camila"
@@ -287,7 +287,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list card-set-item">
+            <li class="team-list">
               <img
                 src="./images/img_daniel.jpg"
                 alt="img_daniel"
@@ -516,10 +516,74 @@
     </div>
 
     <!-------------------/Modal------------- -->
+
+    <!-------------------Modal Contacts------------- -->
+    <div class="modal-contacts" data-modal>
+      <button class="modal-btn" type="button" data-modal-contacts-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icon/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="modal-contacts-menu-list list">
+        <li>
+          <a class="modal-contacts-menu current" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a class="modal-contacts-menu" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="modal-contacts-menu" href="">Contacts</a></li>
+      </ul>
+      <ul class="modal-contacts-list list">
+        <li>
+          <a class="modal-contacts-tel" href="tel:+11(000)1111111"
+            >+11 (000) 111-11-11
+          </a>
+        </li>
+        <li>
+          <a class="modal-contacts-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icon/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icon/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icon/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icon/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-------------------/Modal Contacts------------- -->
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     <script src="./js/phone-mask.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-contacts.js"></script>
   </body>
 </html>
