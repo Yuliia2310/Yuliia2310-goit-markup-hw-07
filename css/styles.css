@@ -319,7 +319,6 @@ body {
 /*================= Hero ================= */
 .hero {
     background-color: var(--Hero-background);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     padding-top: 188px;
@@ -329,7 +328,46 @@ body {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_mob@1x.jpg);
 
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_mob@2x.jpg);
+    }
+}
+/* Device up to 768px */
+@media screen and (min-width: 481px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_tab@2x.jpg);
+        }
+    }
+}
+
+/* Device form 769px to 1600px */
+@media screen and (min-width: 769px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1_desktop@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1_desktop@2x.jpg);
+        }
+    }
 }
 
 .hero-content {
@@ -382,6 +420,10 @@ body {
     }
 
 }
+
+
+
+
 
 /*================= /Hero ================= */
 
@@ -560,9 +602,49 @@ body {
 
 /* 1200px <= tablet screen <= infinity */
 @media screen and (min-width: 1200px) {
-    /* TODO REMOVE EMPTY */
+  
 }
 
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .team-list{
+        background-image:  url(../images/team/);
+    }
+}
+
+/* Device up to 768px */
+@media screen and (min-width: 481px) {
+    .team-list {
+        background-image: url(../images/hero/Dark-bg_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .team-list{
+            background-image:  url(../images/hero/Dark-bg_tab@2x.jpg);
+        }
+    }
+}
+
+/* Device form 769px to 1600px */
+@media screen and (min-width: 769px) {
+    .team-list{
+        background-image:  url(../images/hero/people-office\ 1_desktop@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .team-list{
+            background-image:  url(../images/hero/people-office\ 1_desktop@2x.jpg);
+        }
+    }
+}
+
+  /* TODO REMOVE EMPTY */
 /*================= /Team ============================== */
 
 
@@ -1249,3 +1331,50 @@ body {
     justify-content: space-between;
     gap: 0;
 }
+/* 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+  /* Phone screen up to 480px */
+
+  /* background-image: url(.
+}
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .price {
+          background-image: url(../images/price/bg-img_mob@2x.png);
+      }
+  } */
+
+  /* Device up to 768px */
+  /* @media screen and (min-width: 481px) {
+      .price {
+          background-image: url(../images/price/bg-img_tab@1x.png);
+      }
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+          .price {
+              background-image: url(../images/price/bg-img_tab@2x.png);
+          }
+      }
+  }
+
+  /* Device form 769px to 1600px */
+  /* @media screen and (min-width: 769px) {
+      .price {
+          background-image: url(../images/price/bg-img_desk@1x.png);
+      }
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+          .price {
+              background-image: url(../images/price/bg-img_desk@2x.png);
+          }
+      }
+  }  */ 

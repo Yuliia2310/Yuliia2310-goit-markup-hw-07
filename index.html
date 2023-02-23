@@ -129,28 +129,47 @@
           <h2 class="title">What Are We Doing</h2>
           <ul class="card-set list">
             <li class="services-list card-set-item">
+              <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/services/png1@1x.webp 1x, ./images/services/png1@2x.webp 2x"
+                type="image/webp"> 
               <img
-                src="./images/img1.jpg"
+                src="./images/services/png1@1x.webp"
                 alt="images1"
                 width="360"
                 height="300"
-              />
+                loading="lazy"
+              /></picture>
             </li>
             <li class="services-list card-set-item">
+              <picture><source 
+                media="(min-width: 1200px)"
+                srcset="./images/services/png2@1x.webp 1x, ./images/services/png2@2x.webp 2x"
+                type="image/webp"> 
               <img
-                src="./images/img2.jpg"
+                src="./images/services/png1@1x.webp"
                 alt="images2"
                 width="360"
                 height="300"
-              />
+                loading="lazy"
+              /></picture>
+              
             </li>
             <li class="services-list card-set-item">
-              <img
-                src="./images/img3.jpg"
+              <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/services/png3@1x.webp 1x, ./images/services/png3@2x.webp 2x"
+                type="image/webp"> 
+                <img
+                src="./images/services/png3@1x.webp"
                 alt="images3"
                 width="360"
-                height="300"
+                height="300"  
+                loading="lazy"         
               />
+            </picture>
             </li>
           </ul>
         </div>
@@ -162,10 +181,18 @@
           <ul class="team-cards card-set list">
             <li class="team-list">
               <img
-                src="./images/img_mark.jpg"
+               srcset="
+               ./images/team/img_mob@1x.jpg, 
+               ./images/team/img_mob@2x.jpg,
+               ./images/team/img_tab@1x.jpg,
+               ./images/team/img_tab@2x.jpg,
+               ./images/team/img_desktop@1x.jpg,
+               ./images/team/img_desktop@2x.jpg"
+                src="./images/team/img_mob@1x.jpg"
                 alt="img_mark"
                 width="264"
                 height="260"
+                
               />
               <div class="team-wrapper">
                 <h3 class="subtitle">Mark Guerrero</h3>
@@ -205,7 +232,14 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/img_tom.jpg"
+              srcset="
+              ./images/team/img_mob@1x-1.jpg, 
+              ./images/team/img_mob@2x-1.jpg,
+              ./images/team/img_tab@1x-1.jpg,
+               ./images/team/img_tab@2x-1.jpg,
+               ./images/team/img_desktop@1x-1.jpg,
+               ./images/team/img_desktop@2x-1.jpg"
+                src="./images/team/img_mob@1x-1.jpg"
                 alt="img_tom"
                 width="264"
                 height="260"
@@ -246,8 +280,14 @@
               </div>
             </li>
             <li class="team-list">
-              <img
-                src="./images/img_camila.jpg"
+              <img srcset="
+              ./images/team/img_mob@1x-2.jpg, 
+              ./images/team/img_mob@2x-2.jpg,
+              ./images/team/img_tab@1x-2.jpg,
+               ./images/team/img_tab@2x-2.jpg,
+               ./images/team/img_desktop@1x-2.jpg,
+               ./images/team/img_desktop@2x-2.jpg"
+                src="./images/team/img_mob@1x-2.jpg"
                 alt="img_camila"
                 width="264"
                 height="260"
@@ -289,7 +329,14 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/img_daniel.jpg"
+             srcset="
+             ./images/team/img_mob@1x-3.jpg,
+              .images/team/img_mob@2x-3.jpg,
+              ./images/team/img_tab@1x-3.jpg,
+               ./images/team/img_tab@2x-3.jpg,
+               ./images/team/img_desktop@1x-3.jpg,
+               ./images/team/img_desktop@2x-3jpg3"
+                src="./images/team/img_mob@1x-3.jpg"
                 alt="img_daniel"
                 width="264"
                 height="260"
@@ -582,7 +629,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
-    <script src="./js/phone-mask.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/modal-contacts.js"></script>
   </body>
